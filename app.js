@@ -24,7 +24,7 @@ app.use(methodOverride(function (req, res) {
 let todolist = [];
 
 /* The to do list and the form are displayed */
-app.get('/todo', function (req, res) {
+app.get('/todo', function (req, res){
         res.render('todo.ejs', {
             todolist,
             clickHandler: "func1();"
